@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300;1,400;1,600&family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@500&family=Roboto:wght@100&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: #171717;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 7vw, 1.8rem);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.8397435897435898rem + 0.6837606837606838vw, 1.25rem);
+}
+
+.new-container {
+  width: min(100% - 1rem, 60rem);
+  padding: 1em;
+  margin-inline: auto;
+}
+.logo-img {
+  mix-blend-mode: multiply;
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+
+#slideshow-image {
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (min-width: 50em) {
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+   
+  }
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.logo-img {
+  height: 40px;
+}
+
+/* Burger Menu Icon (Visible on Small Screens) */
+#burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#burger-menu svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Navigation Menu */
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  text-align: center;
+}
+
+#menu li {
+  padding: 0.5rem;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: border-bottom 0.3s ease;
+}
+
+#menu a:hover {
+  border-bottom: 3px solid black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Show the burger menu */
+  #burger-menu {
+    display: block;
+  }
+
+  /* Hide the menu by default */
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  /* Show the menu when toggled */
+  #menu.show {
+    display: flex;
+  }
+
+  /* Menu Items in a Column */
+  #menu li {
+    margin: 0.5rem 0;
+  }
+  .header-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   img{
+    margin-inline: auto;
+   }
+  }
+
+}

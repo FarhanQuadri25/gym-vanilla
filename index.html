@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header
+      class="w-full fixed flex justify-between items-center px-8 py-1 bg-white text-black shadow-2xl"
+    >
+      <img src="/logo-img.png" alt="logo" class="logo-img" />
+
+      <!-- Burger Menu Icon -->
+      <button
+        id="burger-menu"
+        class="block md:hidden"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+
+      <!-- Navigation Menu -->
+      <ul
+        id="menu"
+        class="hidden md:flex gap-4 text-xl font-medium text-slate-800"
+      >
+        <li>
+          <a
+            href="#home"
+            class="hover:border-b-4 hover:border-black transition-all duration-150"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#pricing"
+            class="hover:border-b-4 hover:border-black transition-all duration-150"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="hover:border-b-4 hover:border-black transition-all duration-150"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="hover:border-b-4 hover:border-black transition-all duration-150"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section class="container h-screen new-container header-section">
+      <p class="font-bold text-4xl" id="home">
+        Please Provide the text to be displayed here.
+      </p>
+      <img
+        src="/img-1 (1).jpeg"
+        id="slideshow-image"
+        alt="heading-image"
+        width="350"
+        height="200"
+        class="img"
+      />
+    </section>
+    <section class="pricing container new-container" id="pricing">
+      <h1 class="text-5xl text-center mb-2">Pricing</h1>
+      <img src="/pricing.png" alt="" class="mx-auto mt-8" />
+    </section>
+    <section
+      class="about container new-container h-screen flex justify-center items-center"
+      id="about"
+    >
+      <h1 class="text-5xl">
+        About Us<br />
+        Please Provide the Details for the About-Details
+      </h1>
+    </section>
+    <section class="contact" id="contact">
+      <h1
+        class="text-5xl container new-container h-screen flex justify-center items-center"
+      >
+        Contact-Us<br />
+        Please Provide the Details for the Contact-Us
+      </h1>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
